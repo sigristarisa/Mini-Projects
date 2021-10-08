@@ -1,0 +1,27 @@
+// color 
+$purple: rgb(102, 7, 78);
+$orange: rgb(255, 136, 38);
+// $magenta:
+
+// Fonts //
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap"); // "Righteous", cursive;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); // "Montserrat", sans-serif;
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: 
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+
+  #menu {
+    width: 10%;
+    height: 10%;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+  }
+}
