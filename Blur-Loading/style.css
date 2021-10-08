@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#background {
+  width: 100%;
+  height: auto;
+  position: relative;
+  filter: blur(0px);
+}
+
+#loading-number {
+  position: absolute;
+  font-size: 48px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  top: 40%;
+  left: 45%;
+  z-index: 1;
+  opacity: 1;
+}
