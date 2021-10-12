@@ -8,24 +8,47 @@ body {
   background-color: white;
   font-family: "Montserrat", sans-serif;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-body #menuButton {
-  width: 10%;
-  height: 10%;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+body main {
+  width: 80%;
+  height: 100%;
 }
-body #menuContainer {
-  width: 10%;
-  height: 30%;
-  border: red solid 2px;
+body nav {
+  width: 20%;
+  height: 100%;
 }
-body #menuContainer #menu {
+body nav #menuContainer {
   width: 100%;
   height: 100%;
+  background-color: #66074e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body nav #menuContainer #menuButton {
+  width: 50px;
+  height: 50px;
+  color: white;
+  background-color: #c20b57;
+  border-radius: 50px;
+  border: none;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  cursor: pointer;
+}
+body nav #menuContainer #menuButton:hover {
+  background-color: #ff8826;
+}
+body nav #menuContainer #menuButton:focus + ul {
+  opacity: 1;
+  pointer-events: all;
+}
+body nav #menuContainer ul {
+  width: 100%;
+  height: 80%;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -33,11 +56,19 @@ body #menuContainer #menu {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: green solid 2px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
 }
-body #menuContainer #menu .menuList {
+body nav #menuContainer ul li {
   margin-bottom: 30px;
-  border: blue solid 2px;
+}
+body nav #menuContainer ul li a {
+  color: white;
+  text-decoration: none;
+}
+body nav #menuContainer ul a:hover {
+  color: #ff8826;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -16,37 +16,70 @@ body {
   font-family: "Montserrat", sans-serif;
 
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  #menuButton {
-    width: 10%;
-    height: 10%;
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+  main {
+    width: 80%;
+    height: 100%;
   }
-  #menuContainer {
-    width: 10%;
-    height: 30%;
 
-    border: red solid 2px;
+  nav {
+    width: 20%;
+    height: 100%;
 
-    #menu {
+    #menuContainer {
       width: 100%;
       height: 100%;
-      list-style: none;
-      padding: 0;
-      margin: 0;
+      background-color: $purple;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      border: green solid 2px;
 
-      .menuList {
-        margin-bottom: 30px;
-        border: blue solid 2px;
+      #menuButton {
+        width: 50px;
+        height: 50px;
+        color: white;
+        background-color: $magenta;
+        border-radius: 50px;
+        border: none;
+        margin-top: 20px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 30px;
+        cursor: pointer;
+      }
+
+      #menuButton:hover {
+        background-color: $orange;
+      }
+      #menuButton:focus + ul {
+        opacity: 1;
+        pointer-events: all;
+      }
+
+      ul {
+        width: 100%;
+        height: 80%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease;
+
+        li {
+          margin-bottom: 30px;
+          a {
+            color: white;
+            text-decoration: none;
+          }
+        }
+        a:hover {
+          color: $orange;
+        }
       }
     }
   }
