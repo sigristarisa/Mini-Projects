@@ -14,11 +14,11 @@ body {
   padding: 0;
   background-color: white;
   font-family: "Montserrat", sans-serif;
-
   display: flex;
   justify-content: center;
   align-items: center;
-  main {
+
+  #content {
     width: 80%;
     height: 100%;
   }
@@ -26,39 +26,49 @@ body {
   nav {
     width: 20%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #menuButton {
+      width: 50px;
+      height: 50px;
+      color: white;
+      background-color: $magenta;
+      border-radius: 50px;
+      border: none;
+      font-family: "Montserrat", sans-serif;
+      font-size: 30px;
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      right: 50px;
+    }
+
+    #menuButton:hover {
+      background-color: $orange;
+    }
+    #menuButton:focus + #menuContainer {
+      opacity: 1;
+      pointer-events: all;
+    }
 
     #menuContainer {
-      width: 100%;
+      width: 20%;
       height: 100%;
       background-color: $purple;
       display: flex;
       flex-direction: column;
       align-items: center;
-
-      #menuButton {
-        width: 50px;
-        height: 50px;
-        color: white;
-        background-color: $magenta;
-        border-radius: 50px;
-        border: none;
-        margin-top: 20px;
-        font-family: "Montserrat", sans-serif;
-        font-size: 30px;
-        cursor: pointer;
-      }
-
-      #menuButton:hover {
-        background-color: $orange;
-      }
-      #menuButton:focus + ul {
-        opacity: 1;
-        pointer-events: all;
-      }
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.2s ease;
+      position: absolute;
 
       ul {
         width: 100%;
-        height: 80%;
+        height: 100%;
         list-style: none;
         padding: 0;
         margin: 0;
@@ -66,9 +76,6 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        opacity: 0;
-        pointer-events: none;
-        transition: all 0.3s ease;
 
         li {
           margin-bottom: 30px;
@@ -76,6 +83,9 @@ body {
             color: white;
             text-decoration: none;
           }
+        }
+        #back {
+          margin-top: 200px;
         }
         a:hover {
           color: $orange;
