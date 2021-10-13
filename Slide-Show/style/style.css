@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #photoContainer {
+  width: 80%;
+  height: 80%;
+  border: 2px solid orange;
+}
+body #photoContainer .slide {
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+}
+body #photoContainer .active-slide {
+  width: 100%;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=style.css.map */
