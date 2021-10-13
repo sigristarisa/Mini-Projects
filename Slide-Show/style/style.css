@@ -5,20 +5,64 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
+  background-color: #f7eed7;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-body #imageContainer {
-  width: 80%;
+body header {
+  width: 100%;
+  height: 20%;
+  margin-top: 20px;
+  text-align: center;
+}
+body header h1 {
+  font-family: "Righteous", cursive;
+  font-size: 48px;
+  color: #ee930b;
+}
+body main {
+  width: 100%;
+  height: 80%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main #imageContainer {
+  width: 55%;
   margin: auto;
   overflow: hidden;
 }
-body #imageContainer #imageSlide {
-  width: 80%;
+body main #imageContainer #imageSlide {
+  width: 100%;
   height: 500px;
   display: flex;
+}
+body main #buttonContainer {
+  width: 30%;
+  height: 10%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+body main #buttonContainer button {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  color: #f7eed7;
+  background-color: #95bcce;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  cursor: pointer;
+}
+body main #buttonContainer button:hover {
+  background-color: #ee930b;
 }
 
 /*# sourceMappingURL=style.css.map */

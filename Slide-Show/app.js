@@ -5,20 +5,20 @@ const slideShow = ((imageNum) => {
   const goRight = document.getElementById("goRight");
 
   let counter = 0;
-  const size = images[0].clientWidth;
+  const size = images[0].clientWidth + 5;
 
   const slideImages = (direction) => {
     if (direction === "right") {
-      if (counter < imageNum) {
-        imageSlide.style.transition = `transform 0.1s ease-in-out`;
-        imageSlide.style.transform = `translateX(${-size * counter}px)`;
+      if (counter < imageNum - 1) {
         counter++;
+        imageSlide.style.transition = `transform 0.4s ease-in`;
+        imageSlide.style.transform = `translateX(${-size * counter}px)`;
       }
     } else if (direction === "left") {
-      if (-1 < counter) {
-        imageSlide.style.transition = `transform 0.1s ease-in-out`;
-        imageSlide.style.transform = `translateX(${-size * counter}px)`;
+      if (0 < counter) {
         counter--;
+        imageSlide.style.transition = `transform 0.4s ease-in`;
+        imageSlide.style.transform = `translateX(${-size * counter}px)`;
       }
     }
   };
