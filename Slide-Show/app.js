@@ -13,10 +13,18 @@ const slideShow = ((imageNum) => {
         counter++;
         imageSlide.style.transition = `transform 0.4s ease-in`;
         imageSlide.style.transform = `translateX(${-size * counter}px)`;
+      } else if (counter >= imageNum - 1) {
+        counter = 0;
+        imageSlide.style.transition = `transform 0.4s ease-in`;
+        imageSlide.style.transform = `translateX(${-size * counter}px)`;
       }
     } else if (direction === "left") {
       if (0 < counter) {
         counter--;
+        imageSlide.style.transition = `transform 0.4s ease-in`;
+        imageSlide.style.transform = `translateX(${-size * counter}px)`;
+      } else if (counter <= 0) {
+        counter = imageNum - 1;
         imageSlide.style.transition = `transform 0.4s ease-in`;
         imageSlide.style.transform = `translateX(${-size * counter}px)`;
       }
