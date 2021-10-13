@@ -1,0 +1,50 @@
+// Colors //
+$pink: rgb(252, 189, 195);
+$light-yellow: rgb(248, 245, 207);
+$dark-green: rgb(3, 51, 3);
+$red: rgba(212, 4, 4, 0.842);
+
+// Fonts //
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap"); // "Righteous", cursive;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); // "Montserrat", sans-serif;
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: $pink;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    margin: 0;
+    color: $red;
+    font-family: "Righteous", cursive;
+    font-size: 48px;
+  }
+  #form {
+    width: 40%;
+    height: 80%;
+    background-color: $light-yellow;
+    border: 2px blue solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 20px;
+    }
+
+    #submitButton {
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+}
