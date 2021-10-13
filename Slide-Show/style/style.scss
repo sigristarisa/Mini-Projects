@@ -12,20 +12,15 @@ body {
   justify-content: center;
   align-items: center;
 
-  #photoContainer {
+  #imageContainer {
     width: 80%;
-    height: 80%;
-    border: 2px solid orange;
+    margin: auto;
+    overflow: hidden;
 
-    .slide {
-      width: 100%;
-      opacity: 0;
-      z-index: 1;
-      position: absolute;
-    }
-    .active-slide {
-      width: 100%;
-      opacity: 1;
+    #imageSlide {
+      width: 80%;
+      height: 500px;
+      display: flex;
     }
   }
 }
