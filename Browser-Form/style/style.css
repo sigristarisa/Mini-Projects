@@ -21,11 +21,19 @@ body #form {
   width: 40%;
   height: 80%;
   background-color: #f8f5cf;
-  border: 2px blue solid;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+body #form input {
+  width: 300px;
+  height: 20px;
+}
+body #form select {
+  width: 305px;
+  height: 25px;
+  text-align-last: center;
 }
 body #form .container {
   display: flex;
@@ -35,7 +43,18 @@ body #form .container {
   margin: 20px;
 }
 body #form #submitButton {
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  margin-top: 50px;
   font-family: "Montserrat", sans-serif;
+  border: none;
+  color: #f8f5cf;
+  background-color: #033303;
+}
+body #form #submitButton:hover {
+  color: #f8f5cf;
+  background-color: rgba(212, 4, 4, 0.842);
 }
 
 /*# sourceMappingURL=style.css.map */
